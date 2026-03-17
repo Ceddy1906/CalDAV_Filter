@@ -1,0 +1,12 @@
+{
+  "domain": "caldav_filter",
+  "name": "CalDAV Filter Calendar",
+  "version": "1.0.0",
+  "config_flow": true,
+  "requirements": ["caldav>=0.9"],
+  "dependencies": [],
+  "codeowners": [],
+  "iot_class": "cloud_polling",
+  "documentation": "",
+  "icon": "mdi:calendar-filter"
+}

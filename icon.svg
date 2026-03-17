@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Background -->
+  <rect width="256" height="256" rx="48" ry="48" fill="#1976D2"/>
+
+  <!-- Calendar body -->
+  <rect x="36" y="64" width="184" height="152" rx="16" ry="16" fill="#ffffff"/>
+
+  <!-- Calendar header bar -->
+  <rect x="36" y="64" width="184" height="52" rx="16" ry="16" fill="#0D47A1"/>
+  <rect x="36" y="96" width="184" height="20" fill="#0D47A1"/>
+
+  <!-- Binding rings -->
+  <rect x="84"  y="44" width="16" height="36" rx="8" ry="8" fill="#ffffff"/>
+  <rect x="156" y="44" width="16" height="36" rx="8" ry="8" fill="#ffffff"/>
+
+  <!-- Calendar grid: 3 columns × 3 rows -->
+  <!-- Row 1 -->
+  <rect x="56"  y="136" width="32" height="28" rx="6" fill="#E3F2FD"/>
+  <rect x="112" y="136" width="32" height="28" rx="6" fill="#E3F2FD"/>
+  <rect x="168" y="136" width="32" height="28" rx="6" fill="#1976D2"/>
+
+  <!-- Row 2 -->
+  <rect x="56"  y="174" width="32" height="28" rx="6" fill="#E3F2FD"/>
+  <rect x="112" y="174" width="32" height="28" rx="6" fill="#E3F2FD"/>
+  <rect x="168" y="174" width="32" height="28" rx="6" fill="#E3F2FD"/>
+
+  <!-- Highlighted day dot (row 1, col 3) -->
+  <circle cx="184" cy="150" r="8" fill="#ffffff"/>
+
+  <!-- Filter funnel icon (bottom-right overlay) -->
+  <circle cx="192" cy="192" r="40" fill="#FF6F00"/>
+  <polygon points="172,176 212,176 202,192 202,210 182,210 182,192" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,81 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "CalDAV Connection",
+        "description": "Enter your CalDAV server details (e.g. Nextcloud).",
+        "data": {
+          "url": "CalDAV URL",
+          "username": "Username",
+          "password": "Password",
+          "poll_interval": "Poll interval (minutes)"
+        }
+      },
+      "add_filter": {
+        "title": "Add first filter",
+        "description": "Create your first filtered calendar entity.",
+        "data": {
+          "filter_name": "Entity name",
+          "filter_calendar": "Calendar",
+          "filter_icon": "Icon",
+          "title_keyword": "Title keyword (optional)",
+          "desc_keyword": "Description keyword (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to CalDAV server. Check the URL.",
+      "invalid_auth": "Invalid username or password.",
+      "no_calendars": "No calendars found on this server.",
+      "unknown": "An unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This CalDAV account is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Manage filters"
+      },
+      "add_filter": {
+        "title": "Add filter",
+        "data": {
+          "filter_name": "Entity name",
+          "filter_calendar": "Calendar",
+          "filter_icon": "Icon",
+          "title_keyword": "Title keyword (optional)",
+          "desc_keyword": "Description keyword (optional)"
+        }
+      },
+      "edit_filter": {
+        "title": "Select filter to edit",
+        "data": {
+          "filter_id": "Filter"
+        }
+      },
+      "edit_filter_form": {
+        "title": "Edit filter",
+        "data": {
+          "filter_name": "Entity name",
+          "filter_calendar": "Calendar",
+          "filter_icon": "Icon",
+          "title_keyword": "Title keyword (optional)",
+          "desc_keyword": "Description keyword (optional)"
+        }
+      },
+      "delete_filter": {
+        "title": "Delete filter",
+        "data": {
+          "filter_id": "Filter to delete"
+        }
+      },
+      "connection": {
+        "title": "Connection settings",
+        "data": {
+          "poll_interval": "Poll interval (minutes)"
+        }
+      }
+    }
+  }
+}

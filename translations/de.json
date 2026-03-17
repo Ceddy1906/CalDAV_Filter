@@ -1,0 +1,81 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "CalDAV-Verbindung",
+        "description": "Zugangsdaten deines CalDAV-Servers eingeben (z.B. Nextcloud).",
+        "data": {
+          "url": "CalDAV-URL",
+          "username": "Benutzername",
+          "password": "Passwort",
+          "poll_interval": "Abfrageintervall (Minuten)"
+        }
+      },
+      "add_filter": {
+        "title": "Ersten Filter anlegen",
+        "description": "Erstelle deinen ersten gefilterten Kalender.",
+        "data": {
+          "filter_name": "Name der Entität",
+          "filter_calendar": "Kalender",
+          "filter_icon": "Icon",
+          "title_keyword": "Stichwort im Titel (optional)",
+          "desc_keyword": "Stichwort in der Beschreibung (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zum CalDAV-Server fehlgeschlagen. URL prüfen.",
+      "invalid_auth": "Ungültiger Benutzername oder Passwort.",
+      "no_calendars": "Auf diesem Server wurden keine Kalender gefunden.",
+      "unknown": "Ein unbekannter Fehler ist aufgetreten."
+    },
+    "abort": {
+      "already_configured": "Dieses CalDAV-Konto ist bereits konfiguriert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Filter verwalten"
+      },
+      "add_filter": {
+        "title": "Filter hinzufügen",
+        "data": {
+          "filter_name": "Name der Entität",
+          "filter_calendar": "Kalender",
+          "filter_icon": "Icon",
+          "title_keyword": "Stichwort im Titel (optional)",
+          "desc_keyword": "Stichwort in der Beschreibung (optional)"
+        }
+      },
+      "edit_filter": {
+        "title": "Filter zum Bearbeiten auswählen",
+        "data": {
+          "filter_id": "Filter"
+        }
+      },
+      "edit_filter_form": {
+        "title": "Filter bearbeiten",
+        "data": {
+          "filter_name": "Name der Entität",
+          "filter_calendar": "Kalender",
+          "filter_icon": "Icon",
+          "title_keyword": "Stichwort im Titel (optional)",
+          "desc_keyword": "Stichwort in der Beschreibung (optional)"
+        }
+      },
+      "delete_filter": {
+        "title": "Filter löschen",
+        "data": {
+          "filter_id": "Zu löschender Filter"
+        }
+      },
+      "connection": {
+        "title": "Verbindungseinstellungen",
+        "data": {
+          "poll_interval": "Abfrageintervall (Minuten)"
+        }
+      }
+    }
+  }
+}
