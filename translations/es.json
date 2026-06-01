@@ -1,0 +1,87 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Conexión CalDAV",
+        "description": "Introduce los datos de tu servidor CalDAV (p. ej. Nextcloud).",
+        "data": {
+          "url": "URL de CalDAV",
+          "username": "Nombre de usuario",
+          "password": "Contraseña",
+          "poll_interval": "Intervalo de consulta (minutos)"
+        }
+      },
+      "add_filter": {
+        "title": "Añadir primer filtro",
+        "description": "Crea tu primera entidad de calendario filtrada.",
+        "data": {
+          "filter_name": "Nombre de la entidad",
+          "filter_calendar": "Calendario",
+          "filter_icon": "Icono",
+          "title_keyword": "Palabra clave en el título (opcional)",
+          "desc_keyword": "Palabra clave en la descripción (opcional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "No se puede conectar al servidor CalDAV. Comprueba la URL.",
+      "invalid_auth": "Nombre de usuario o contraseña incorrectos.",
+      "no_calendars": "No se encontraron calendarios en este servidor.",
+      "unknown": "Se produjo un error inesperado."
+    },
+    "abort": {
+      "already_configured": "Esta cuenta CalDAV ya está configurada."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Gestionar filtros",
+        "menu_options": {
+          "add_filter": "Añadir filtro",
+          "edit_filter": "Editar filtro",
+          "delete_filter": "Eliminar filtro",
+          "connection": "Configuración de conexión"
+        }
+      },
+      "add_filter": {
+        "title": "Añadir filtro",
+        "data": {
+          "filter_name": "Nombre de la entidad",
+          "filter_calendar": "Calendario",
+          "filter_icon": "Icono",
+          "title_keyword": "Palabra clave en el título (opcional)",
+          "desc_keyword": "Palabra clave en la descripción (opcional)"
+        }
+      },
+      "edit_filter": {
+        "title": "Seleccionar filtro a editar",
+        "data": {
+          "filter_id": "Filtro"
+        }
+      },
+      "edit_filter_form": {
+        "title": "Editar filtro",
+        "data": {
+          "filter_name": "Nombre de la entidad",
+          "filter_calendar": "Calendario",
+          "filter_icon": "Icono",
+          "title_keyword": "Palabra clave en el título (opcional)",
+          "desc_keyword": "Palabra clave en la descripción (opcional)"
+        }
+      },
+      "delete_filter": {
+        "title": "Eliminar filtro",
+        "data": {
+          "filter_id": "Filtro a eliminar"
+        }
+      },
+      "connection": {
+        "title": "Configuración de conexión",
+        "data": {
+          "poll_interval": "Intervalo de consulta (minutos)"
+        }
+      }
+    }
+  }
+}

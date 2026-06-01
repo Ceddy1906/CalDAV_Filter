@@ -36,7 +36,13 @@
   "options": {
     "step": {
       "init": {
-        "title": "Filter verwalten"
+        "title": "Filter verwalten",
+        "menu_options": {
+          "add_filter": "Filter hinzufügen",
+          "edit_filter": "Filter bearbeiten",
+          "delete_filter": "Filter löschen",
+          "connection": "Verbindungseinstellungen"
+        }
       },
       "add_filter": {
         "title": "Filter hinzufügen",

@@ -1,0 +1,87 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion CalDAV",
+        "description": "Entrez les informations de votre serveur CalDAV (p. ex. Nextcloud).",
+        "data": {
+          "url": "URL CalDAV",
+          "username": "Nom d'utilisateur",
+          "password": "Mot de passe",
+          "poll_interval": "Intervalle d'interrogation (minutes)"
+        }
+      },
+      "add_filter": {
+        "title": "Ajouter le premier filtre",
+        "description": "Créez votre première entité de calendrier filtrée.",
+        "data": {
+          "filter_name": "Nom de l'entité",
+          "filter_calendar": "Calendrier",
+          "filter_icon": "Icône",
+          "title_keyword": "Mot-clé dans le titre (optionnel)",
+          "desc_keyword": "Mot-clé dans la description (optionnel)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de se connecter au serveur CalDAV. Vérifiez l'URL.",
+      "invalid_auth": "Nom d'utilisateur ou mot de passe invalide.",
+      "no_calendars": "Aucun calendrier trouvé sur ce serveur.",
+      "unknown": "Une erreur inattendue s'est produite."
+    },
+    "abort": {
+      "already_configured": "Ce compte CalDAV est déjà configuré."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Gérer les filtres",
+        "menu_options": {
+          "add_filter": "Ajouter un filtre",
+          "edit_filter": "Modifier un filtre",
+          "delete_filter": "Supprimer un filtre",
+          "connection": "Paramètres de connexion"
+        }
+      },
+      "add_filter": {
+        "title": "Ajouter un filtre",
+        "data": {
+          "filter_name": "Nom de l'entité",
+          "filter_calendar": "Calendrier",
+          "filter_icon": "Icône",
+          "title_keyword": "Mot-clé dans le titre (optionnel)",
+          "desc_keyword": "Mot-clé dans la description (optionnel)"
+        }
+      },
+      "edit_filter": {
+        "title": "Sélectionner le filtre à modifier",
+        "data": {
+          "filter_id": "Filtre"
+        }
+      },
+      "edit_filter_form": {
+        "title": "Modifier le filtre",
+        "data": {
+          "filter_name": "Nom de l'entité",
+          "filter_calendar": "Calendrier",
+          "filter_icon": "Icône",
+          "title_keyword": "Mot-clé dans le titre (optionnel)",
+          "desc_keyword": "Mot-clé dans la description (optionnel)"
+        }
+      },
+      "delete_filter": {
+        "title": "Supprimer le filtre",
+        "data": {
+          "filter_id": "Filtre à supprimer"
+        }
+      },
+      "connection": {
+        "title": "Paramètres de connexion",
+        "data": {
+          "poll_interval": "Intervalle d'interrogation (minutes)"
+        }
+      }
+    }
+  }
+}
