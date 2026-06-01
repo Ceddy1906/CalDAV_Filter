@@ -5,7 +5,7 @@
   "config_flow": true,
   "requirements": ["caldav>=0.9"],
   "dependencies": [],
-  "codeowners": [],
+  "codeowners": ["@Ceddy1906"],
   "iot_class": "cloud_polling",
   "documentation": "https://github.com/Ceddy1906/CalDAV_Filter",
   "issue_tracker": "https://github.com/Ceddy1906/CalDAV_Filter/issues",
