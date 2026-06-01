@@ -1,7 +1,7 @@
 {
   "domain": "caldav_filter",
   "name": "CalDAV Filter Calendar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "config_flow": true,
   "requirements": ["caldav>=0.9"],
   "dependencies": [],
