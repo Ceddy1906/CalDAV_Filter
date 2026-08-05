@@ -181,11 +181,40 @@ class CalDAVFilterOptionsFlow(OptionsFlow):
         )
 
         menu_options = (
-            ["add_filter", "edit_filter", "delete_filter", "connection"]
+            ["add_filter", "edit_filter", "delete_filter", "rescan_calendars", "connection"]
             if self._filters
-            else ["add_filter", "connection"]
+            else ["add_filter", "rescan_calendars", "connection"]
         )
         return self.async_show_menu(step_id="init", menu_options=menu_options)
+
+    # --- Rescan calendars (sync) ---
+
+    async def async_step_rescan_calendars(
+        self, user_input: dict[str, Any] | None = None
+    ) -> FlowResult:
+        """Re-read the calendar list from the server (e.g. after adding one)."""
+        try:
+            calendars = await self.hass.async_add_executor_job(
+                _test_connection,
+                self.config_entry.data[CONF_CALDAV_URL],
+                self.config_entry.data[CONF_USERNAME],
+                self.config_entry.data[CONF_PASSWORD],
+            )
+        except Exception:
+            _LOGGER.exception("Error rescanning CalDAV calendars")
+            return self.async_abort(reason="cannot_connect")
+
+        if not calendars:
+            return self.async_abort(reason="no_calendars")
+
+        new_data = dict(self.config_entry.data)
+        new_data[CONF_DISCOVERED_CALENDARS] = calendars
+        self.hass.config_entries.async_update_entry(
+            self.config_entry, data=new_data
+        )
+        self._discovered_calendars = calendars
+
+        return self.async_abort(reason="rescan_done")
 
     # --- Add filter ---
 

@@ -41,6 +41,7 @@
           "add_filter": "Filter hinzufügen",
           "edit_filter": "Filter bearbeiten",
           "delete_filter": "Filter löschen",
+          "rescan_calendars": "Kalender neu einlesen (Sync)",
           "connection": "Verbindungseinstellungen"
         }
       },
@@ -82,6 +83,11 @@
           "poll_interval": "Abfrageintervall (Minuten)"
         }
       }
+    },
+    "abort": {
+      "rescan_done": "Kalenderliste aktualisiert. Neu hinzugefügte Kalender stehen jetzt beim Anlegen oder Bearbeiten eines Filters zur Auswahl.",
+      "cannot_connect": "Verbindung zum CalDAV-Server fehlgeschlagen. Verbindungseinstellungen prüfen.",
+      "no_calendars": "Auf diesem Server wurden keine Kalender gefunden."
     }
   }
 }
